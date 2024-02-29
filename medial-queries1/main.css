@@ -1,3 +1,45 @@
+
 body {
   background: blanchedalmond;
+  text-align: center;
 }
+  
+.container {
+  display: flex;
+  flex-flow: wrap column;
+
+}
+
+.a, .b, .c {
+  background: rgb(55, 55, 55);
+}
+
+.a, .c {
+  padding: 20px 0;
+  flex-wrap: 1;
+}
+
+.b {
+  padding: 100% 0;
+  margin: 1rem 0px;
+  flex-grow: 2;
+}
+
+@media (max-width: 600px) { 
+  .container {
+    display: flex;
+    flex-direction: column; 
+    padding: 0.8rem;
+    background-color: rgb(0, 123, 232);
+  }
+
+  .a, .c {
+    padding: 20px 0;
+  }
+
+  .b {
+    padding: 100% 0;
+    margin: 1rem 0px;
+  }
+}
+

@@ -1,3 +1,54 @@
 body {
   background: papayawhip;
 }
+
+body {
+  background: blanchedalmond;
+  text-align: center;
+}
+
+.a,
+.b,
+.c {
+  /* background: rgb(168, 65, 65); */
+  /* margin: 0.5rem; */
+}
+
+.container {
+  /* display: flex; */
+  /* flex-flow: wrap row; */
+}
+
+.a {
+  /* width: 100%; */
+  /* height: 30vh; */
+}
+
+.b {
+  /* flex-grow: 3; */
+  /* height: 100vh; */
+}
+
+.c {
+  /* flex-grow: 1; */
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-flow: nowrap column;
+  }
+
+  .a,
+  .b,
+  .c {
+    /* background: rgb(65, 93, 168); */
+    /* margin: 8px; */
+    /* width: auto; */
+  }
+
+  .a,
+  .c {
+    /* height:  100px; */
+  }
+}

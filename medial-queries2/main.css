@@ -7,6 +7,11 @@
   .container {
     
   }
+
+  .wrap-bcde {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 
@@ -24,7 +29,6 @@
   .wrap-bcde {
     display: flex;
     flex-wrap: wrap;
-   
   }
   
   .a, .b, .c, .d, .e, .f { 
@@ -32,6 +36,7 @@
     justify-content: center; 
     align-items: center;
     background: darkred;
+    color: aliceblue;
     border: 3px solid;
     margin: 5px;
   }

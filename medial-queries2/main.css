@@ -4,13 +4,58 @@
 
 /* ••••••••••••••• Desktop ••••••••••••••• */
 @media (min-width: 600px) {
+  .a, .b, .c, .d, .e, .f { 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background: darkred;
+    color: aliceblue;
+    border: 3px solid black;
+    margin: 15px;
+  }
+
   .container {
+    border: 3px solid rgb(36, 36, 36);
+    display: flex; 
+    flex-flow: wrap ;
+    height: 98vh;
     
   }
 
-  .wrap-bcde {
+  .a {
+    flex-grow: 1;
+    width: 100%;
+    height: 20%;
+  }
+
+  .main-wrap {
+    /* border: 3px solid rgb(0, 106, 244); */
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: wrap;
+    width: 100%;
+    height: 80vh; 
+  }
+
+  .wrap-b-cde {
+    display: flex;
+    flex-flow: wrap;
+    flex-grow: 1;
+  }
+
+  .b{
+    width: 100%;
+    height: 39vh;
+  }
+
+  .c, .d, .e {
+    flex-grow: 1;
+    height: 30vh;
+    height: 30vh
+  }
+  
+  .f {
+    flex-grow: 0.5; 
+    max-height: 93%;
   }
 }
 
@@ -26,7 +71,7 @@
     height: 98vh;
   }
   
-  .wrap-bcde {
+  .wrap-b-cde {
     display: flex;
     flex-wrap: wrap;
   }
@@ -50,7 +95,7 @@
     height: 50vh;
   }
 
-  .wrap-bcde .c, .d, .e {
+  .wrap-b-cde .c, .d, .e {
     flex-grow: 2;
     width: 10vh;
     height: 15vh;

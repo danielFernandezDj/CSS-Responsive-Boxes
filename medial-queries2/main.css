@@ -4,64 +4,70 @@
 
 /* ••••••••••••••• Desktop ••••••••••••••• */
 @media (min-width: 600px) {
-  .a, .b, .c, .d, .e, .f { 
+
+  .a, .b, .c, .d, .e, .f {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     background: darkred;
     color: aliceblue;
-    border: 3px solid black;
-    margin: 15px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
   }
 
   .container {
-    border: 3px solid rgb(36, 36, 36);
-    display: flex; 
-    flex-flow: wrap ;
-    height: 98vh;
-    
-  }
-
-  .a {
-    flex-grow: 1;
-    width: 100%;
-    height: 20%;
+    border: 2px solid red;
+    display: flex;
+    flex-flow: wrap;
   }
 
   .main-wrap {
-    /* border: 3px solid rgb(0, 106, 244); */
+    border: 2px solid;
+    margin: 10px;
     display: flex;
-    flex-flow: wrap;
-    width: 100%;
-    height: 80vh; 
+    flex-flow: wrap column;
+    flex-grow: 2;
+    height: fit-content; 
+    height: 75vh;
   }
 
-  .wrap-b-cde {
+  .wrap-cde {
     display: flex;
-    flex-flow: wrap;
+    flex-flow: wrap row;
+    height: 25vh;
+  }
+
+  .a {
+    width: 100%;
+    flex-grow: 1;
+    height: 20vh;
+  }
+
+  .b, .f {
     flex-grow: 1;
   }
 
-  .b{
-    width: 100%;
-    height: 39vh;
-  }
-
-  .c, .d, .e {
+  .c,
+  .d,
+  .e {
     flex-grow: 1;
-    height: 30vh;
-    height: 30vh
-  }
-  
-  .f {
-    flex-grow: 0.5; 
-    max-height: 93%;
   }
 }
 
 
 /* ••••••••••••••• Mobile ••••••••••••••• */
 @media (max-width: 600px) {
+
+  .a, .b, .c, .d, .e, .f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkred;
+    color: aliceblue;
+    border: 3px solid;
+    margin: 5px;
+  }
 
   .container {
     display: flex;
@@ -70,34 +76,35 @@
     padding: 1%;
     height: 98vh;
   }
-  
-  .wrap-b-cde {
+
+  .main-wrap {
+    border: 2px solid;
+    margin: 10px;
     display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .a, .b, .c, .d, .e, .f { 
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    background: darkred;
-    color: aliceblue;
-    border: 3px solid;
-    margin: 5px;
-  }
-  
-  .a, .f {
-    height: 20vh;
-  }
-  
-  .b {
-    width: 100vh;
-    height: 50vh;
+    flex-flow: wrap column;
+    flex-grow: 2;
+    height: fit-content; 
+    height: 75vh;
   }
 
-  .wrap-b-cde .c, .d, .e {
-    flex-grow: 2;
-    width: 10vh;
+  .wrap-cde {
+    display: flex;
+    flex-flow: wrap row;
     height: 15vh;
+  }
+
+  .a,
+  .f {
+    height: 20vh;
+  }
+
+  .b {
+    flex-grow: 1;
+  }
+
+  .c,
+  .d,
+  .e {
+    flex-grow: 1;
   }
 }

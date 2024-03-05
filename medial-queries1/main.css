@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/* ••••••••••••••• Desktop ••••••••••••••• */
 @media (min-width: 600px) { 
   .container {
     display: flex;
@@ -14,6 +15,7 @@
     justify-content: center;
     align-items: center;
     background-color: darkred;
+    color: aliceblue;
     border: 3px solid ;
     margin: 10px;
   }
@@ -33,6 +35,7 @@
   }
 }
 
+/* ••••••••••••••• Mobile ••••••••••••••• */
 @media (max-width: 600px) {
   .container {
     display: flex;
@@ -48,7 +51,8 @@
     justify-content: center;
     align-items: center;
     background-color: darkred;
-    border: 3px solid;
+    color: aliceblue;
+    border: 3px solid black;
     margin: 15px;
   }
 

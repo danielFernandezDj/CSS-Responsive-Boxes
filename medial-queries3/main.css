@@ -1,3 +1,89 @@
-body {
-  background: peachpuff;
+* {
+  box-sizing: border-box;
+}
+
+/* ••••••••••••••• Desktop ••••••••••••••• */
+@media (min-width: 600px) {
+
+  .a, .b, .c, .d, .e, .f, .g, .h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkred;
+    color: aliceblue;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;     
+  }
+
+  .container { 
+    border: 2px solid red;
+    display: flex; 
+    flex-flow: wrap;  
+  }
+
+  .main-wrap {
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+    flex-flow: wrap column;
+    flex-grow: 2;
+  }
+
+  .b, .c, .d, .e, .f, .g {    
+  
+  }
+
+  .a {
+    /* flex-grow: 1; */
+    width: 100%;
+    height: 20vh;
+  }
+  
+  .h {
+    flex-grow: 1;
+  }
+}
+
+
+/* ••••••••••••••• Mobile ••••••••••••••• */
+@media (max-width: 600px) {
+
+  .a, .b, .c, .d, .e, .f, .g, .h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkred;
+    color: aliceblue;
+    border: 3px solid black;
+    margin: 5px;
+  }
+
+  .container {
+    border: 3px solid;
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+  }
+
+  .main-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+  }
+
+  .b, .c, .d, .e, .f, .g {
+    flex-grow: 3;
+    width: 30%;
+    height: 15vh;
+  }
+
+  .a {
+    height: 30%;
+  }
+
+  .h {
+    height: 100%;
+  }
 }

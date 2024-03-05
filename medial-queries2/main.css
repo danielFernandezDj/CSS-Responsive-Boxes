@@ -23,7 +23,7 @@
   }
 
   .main-wrap {
-    border: 2px solid;
+    border: 2px solid black;
     margin: 10px;
     display: flex;
     flex-flow: wrap column;
@@ -65,7 +65,7 @@
     align-items: center;
     background: darkred;
     color: aliceblue;
-    border: 3px solid;
+    border: 3px solid black;
     margin: 5px;
   }
 
